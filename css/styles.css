@@ -2,6 +2,7 @@
     --brand-color-bcg: #2F303A;
     --brand-color: #2196F3;
     --brand-color-text: #757575;
+    --brand-timefn: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -90,6 +91,7 @@ img {
     color: inherit;
     display: block;
     padding: 32px 0px;
+    transition: color 250ms var(--brand-timefn);
 }
 
 .navigation-item:visited {
@@ -116,6 +118,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--brand-color-text);
     text-decoration: none;
+    transition: color 250ms var(--brand-timefn);
 }
 
 .contacts:not(:last-child) {
@@ -173,6 +176,7 @@ img {
     color: #FFFFFF;
     margin: 0px auto;
     padding: 10px 32px;
+    transition: background 250ms var(--brand-timefn);
 }
 
 .top-button:hover {
@@ -320,6 +324,7 @@ img {
     align-items: center;
     border-radius: 50% 50%;
     color: #AFB1B8;
+    transition: color 250ms var(--brand-timefn), background 250ms var(--brand-timefn);
 }
 
 .team-linklist-icon {
@@ -366,6 +371,7 @@ img {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
+    transition: color 250ms var(--brand-timefn), border-color 250ms var(--brand-timefn);
 }
 
 .client-icon {
@@ -415,6 +421,7 @@ img {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     display: block;
+    transition: color 250ms var(--brand-timefn);
 }
 
 .contacts-footer:not(:last-child) {
@@ -463,6 +470,7 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50% 50%;
     color: #FFFFFF;
+    transition: background-color 250ms var(--brand-timefn);
 }
 
 .footer-linklist-icon {
@@ -503,6 +511,7 @@ img {
     cursor: pointer;
     border: none;
     padding: 6px 22px;
+    transition: color 250ms var(--brand-timefn), background 250ms var(--brand-timefn), box-shadow 250ms var(--brand-timefn);
 }
 
 .projects-filter-item:hover {
@@ -529,6 +538,7 @@ img {
 .projects-list-item {
     background: #FFFFFF;
     flex-basis: calc((100% - 60px) / 3);
+    transition: box-shadow 250ms var(--brand-timefn);
 }
 
 .projects-list-item:hover {
